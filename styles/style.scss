@@ -1,9 +1,100 @@
 // make the partial, save the partial, delete the extra partial, import the partial in man scss file
-
+@import "partials/normalize";
+@import "partials/variables";
 @import "partials/header";
 @import "partials/footer";
 
-
 body {
-    background: red;
+    width: 100%;
+    max-width: 1920px;
+    font-family: 'Raleway', sans-serif;
 }
+
+.wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+
+// TOP BAR STYLINGGGGGGGGGGGGGGGGGG
+
+.top-bar {
+    background: black;
+    padding: 15px 0;
+}
+
+.top-bar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-inner > div {
+    width: 33.33%;
+}
+
+.top-bar-left {
+    display: flex;
+}
+
+.top-bar-left i {
+    color: $lime;
+    font-size: 12px;
+}
+
+.top-bar-left span {
+    color: white;
+    margin: 0 5px;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.top-bar-left .fa-phone {
+    margin-right: 20px;
+}
+
+.top-bar-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-bar-right div {
+    padding: 0 15px;
+}
+
+.top-bar-right div:first-of-type {
+    border-right: 1px solid white;
+}
+
+.top-bar-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+// NAV STYLINGGGGGGGGGGGGGGGGGGGGGGGGG
+
+nav {
+    width: 40%;
+    margin: 0 auto;
+        ul {
+            display:flex;
+            list-style-type: none;
+            justify-content: space-between;
+            padding: 0;
+            li a{ 
+                text-decoration: none;
+                color: black;
+                font-size: 14px;
+                font-weight: 700;
+                i {
+                    padding: 0 10px;
+                    &.fa-shopping-cart {
+                        color: $lime;
+                    }
+                }
+            }
+        }
+}
+
