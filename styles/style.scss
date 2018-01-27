@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -46,6 +46,7 @@ body {
     margin: 0 5px;
     font-weight: 300;
     font-size: 12px;
+    padding-left: 5px;
 }
 
 .top-bar-left .fa-phone {
@@ -75,7 +76,7 @@ body {
 
 // NAV STYLINGGGGGGGGGGGGGGGGGGGGGGGGG
 
-nav {
+.top-nav {
     width: 40%;
     margin: 0 auto;
         ul {
@@ -88,6 +89,9 @@ nav {
                 color: black;
                 font-size: 14px;
                 font-weight: 700;
+                &:hover {
+                    color: $lime;
+                }
                 i {
                     padding: 0 10px;
                     &.fa-shopping-cart {
@@ -97,4 +101,210 @@ nav {
             }
         }
 }
+
+// SPLASHY HERO IMAGE THING STYLINGGGGGG
+
+.splash {
+    background-image:url(../assets/amy-hirschi-457525.jpg);
+    background-size: cover;
+    padding: 140px 50px;
+    width: 100%;
+}
+
+.splash > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.splash-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.splash-inner h1 {
+    font-weight: 900;
+    font-size: 65px;
+    color: #242c42;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.splash-inner p {
+    color: #242c42;
+    font-size: 18px;
+    text-align: center;
+}
+
+.splash-inner button {
+    background: $lime;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color:white;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.5s ease-in;
+        }
+}
+
+.splash-inner button:hover {
+    background: #242c42;
+    a {
+        color:$lime;
+    }
+}
+
+// TITLEBOX SHARED STYLINGGGGGGGGGGGGGGGGG
+
+.titlebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto 30px;
+        h2 {
+            margin:0 0 20px;
+            text-transform: uppercase;
+            font-size: 36px;
+            font-weight: 700;
+        }
+}
+
+.titlebox p {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.book-logo-box {
+    display: flex;
+    align-items: center;
+}
+
+.book-logo-box img {
+    width: 36px;
+    height: 29px;
+    margin: 0 10px;
+}
+
+.line {
+    height: 2px;
+    width: 30px;
+    background: $lime;
+}
+
+
+
+// COURSES SECTION STYLINGGGGGGGGGG
+
+
+.courses > div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.courses-nav {
+    margin: 0 auto 30px;
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                display: inline-block;
+                a {
+                    font-size: 14px;
+                    font-weight: 300;
+                    margin-right: 15px;
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: $lime;
+                    }
+                }
+            }
+        }
+    }
+
+.courses-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery-card {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width:calc((100% - 60px) / 4);
+    height: 380px;
+    border: 1px solid firebrick;
+    position: relative;
+    h3 {
+        font-size: 17px;
+        font-weight: 700;
+        margin-top: 8px;
+        padding: 0 10px;
+    }
+}
+
+.gallery-card p {
+    font-size: 14px;
+    margin-bottom: 0;
+    padding-top: 15px;
+}
+
+.gallery-card a {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-size: 12px;
+    color: $lime;
+}
+
+.gallery-card:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.gallery-card + div img, .weird img{
+    width: 100%;
+}
+
+// .gallery-card h3 {
+//     font-size: 17px;
+//     font-weight: 700;
+//     margin-top: 8px;
+//     padding: 0 10px;
+// }
+
+
+.instructor img {
+    width: 100%;
+}
+
+.instructor {
+    width: 25%;
+    margin: 0 15px;
+    background: $lime;
+    border-radius: 50%;
+    float: left;
+}
+
+.courses-social {
+    width: 100%;
+    border-top: 1px solid #e1e1e1;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
 
