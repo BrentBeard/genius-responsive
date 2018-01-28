@@ -47,6 +47,7 @@ body {
     font-weight: 300;
     font-size: 12px;
     padding-left: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .top-bar-left .fa-phone {
@@ -243,7 +244,7 @@ body {
     margin-bottom: 20px;
     width:calc((100% - 60px) / 4);
     height: 380px;
-    border: 1px solid firebrick;
+    border: 1px solid #e1e1e1;
     position: relative;
     h3 {
         font-size: 17px;
@@ -275,14 +276,6 @@ body {
     width: 100%;
 }
 
-// .gallery-card h3 {
-//     font-size: 17px;
-//     font-weight: 700;
-//     margin-top: 8px;
-//     padding: 0 10px;
-// }
-
-
 .instructor img {
     width: 100%;
 }
@@ -302,7 +295,60 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    i {
+        color: #666666;
+        font-size: 14px;
+        font-weight: 300;
+        span {
+            margin-left: 5px;
+        }
+    }
 }
+.courses-social .fa-comments {
+    margin-left: 10px;
+}
+
+.courses-social a{
+    float: right;
+    text-transform: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    &:hover {
+        color: #666;
+    }
+}
+
+
+// PHOTO GALLERY STLYINGGGGGGGGGGGGGGGGG
+
+.photo-gallery {
+    width: 95%;
+    margin: 0 auto;
+    background-color: $secondGrey;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.photo-gallery-container {
+    width: 95%;
+    margin: 40px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-gallery-container img {
+    width:calc((100% - 40px) / 3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+
+
+
 
 
 

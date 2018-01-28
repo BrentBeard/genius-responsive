@@ -179,7 +179,8 @@ body {
   margin: 0 5px;
   font-weight: 300;
   font-size: 12px;
-  padding-left: 5px; }
+  padding-left: 5px;
+  font-family: 'Montserrat', sans-serif; }
 
 .top-bar-left .fa-phone {
   margin-right: 20px; }
@@ -377,7 +378,7 @@ body {
   margin-bottom: 20px;
   width: calc((100% - 60px) / 4);
   height: 380px;
-  border: 1px solid firebrick;
+  border: 1px solid #e1e1e1;
   position: relative; }
   .gallery-card h3 {
     font-size: 17px;
@@ -420,3 +421,44 @@ body {
   position: absolute;
   bottom: 0;
   left: 0; }
+  .courses-social i {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 300; }
+    .courses-social i span {
+      margin-left: 5px; }
+
+.courses-social .fa-comments {
+  margin-left: 10px; }
+
+.courses-social a {
+  float: right;
+  text-transform: none;
+  display: block;
+  font-size: 14px;
+  font-weight: 500; }
+  .courses-social a:hover {
+    color: #666; }
+
+.photo-gallery {
+  width: 95%;
+  margin: 0 auto;
+  background-color: #f0f2f7;
+  padding: 20px 0;
+  margin-top: 50px; }
+
+.photo-gallery-container {
+  width: 95%;
+  margin: 40px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.photo-gallery-container img {
+  width: calc((100% - 40px) / 3);
+  margin-right: 20px;
+  margin-bottom: 20px; }
+  .photo-gallery-container img:nth-of-type(3n) {
+    margin-right: 0; }
