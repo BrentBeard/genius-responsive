@@ -272,7 +272,7 @@ body {
     margin-right: 0;
 }
 
-.gallery-card + div img, .weird img{
+.gallery-card img {
     width: 100%;
 }
 
@@ -454,16 +454,25 @@ body {
     padding-right: 20px;
     margin-right: 20px;
     position: relative;
+    list-style-type: none;
 }
 
-.different ul li:nth-of-type(1) {
-    list-style-image: url(../assets/lightbulb.svg);
+.different li::before {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -40px;
+    top: 30px;
 }
-.different ul li:nth-of-type(2) {
-    list-style-image: url(../assets/test-tube.svg);
+
+.different li:nth-of-type(1)::before {
+    content: url('../assets/lightbulb.svg');
 }
-.different ul li:nth-of-type(3) {
-    list-style-image: url(../assets/quality-badge.svg);
+.different li:nth-of-type(2)::before {
+    content: url('../assets/test-tube.svg');
+}
+.different li:nth-of-type(3)::before {
+    content: url('../assets/quality-badge.svg');
 }
 
 .white-circle {
@@ -473,7 +482,7 @@ body {
     border-radius: 200px;
     position: absolute;
     top: -10px;
-    left: -20%;
+    left: -16%;
     z-index: -1;
 }
 
@@ -505,16 +514,32 @@ body {
     }
 }
 
-.price-box:nth-of-type(2n) {
-    background-color: $lime;
+.price-box:hover {
+    background: $lime;
+    color: white;
+    transition: all 0.5s ease;
     .price-circle {
         background-color: $lime;
+         box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.25);
         p, h4 {
             color:white;
             font-weight: 700;
         }
     }
 }
+
+
+// .price-box:nth-of-type(2n) {
+//     background-color: $lime;
+//     .price-circle {
+//         background-color: $lime;
+//          box-shadow: 0px 0px 10px 0px rgba(0, 0, 1, 0.25);
+//         p, h4 {
+//             color:white;
+//             font-weight: 700;
+//         }
+//     }
+// }
 
 .price-box h3 {
     text-transform: uppercase;
@@ -546,6 +571,7 @@ body {
     background-color: $secondGrey;
     position: absolute;
     top: -70px;
+    transition: all 0.5s ease;
     p {
         padding-bottom: 20px;
         font-weight: 700;
@@ -566,9 +592,9 @@ body {
     }
 }
 
-.price-box:nth-of-type(2n) {
-    color: white;
-}
+// .price-box:nth-of-type(2n) {
+//     color: white;
+// }
 
 
 // FOOTER STYLINGGGGGGGGGGGGG
@@ -578,16 +604,129 @@ footer {
     background-color: $offBlack;
     margin-top: 75px;
     padding-top: 40px;
+    color: white;
+    font-size: 14px;
+    i {
+        color: $lime;
+        margin-right: 10px;
+        margin-top: 3px;
+        p {
+            margin-left: 10px;
+            color:white;
+        }
+    }
 }
 
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
 
+.left-foot p a {
+    text-decoration: none;
+    color: $lime;
+    margin-right: 3px;
+}
 
+.left-foot p {
+    margin-top: 5px;
+}
 
+.footer-container h5 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
+.footer-container > div {
+    width: 22%;
+}
 
+.footer-container p {
+    display: inline-block;
+    font-size: 14px;
+    
+}
 
+.footer-lists {
+    display: flex;
+    flex-direction: row;
+}
 
+.footer-container ul {
+    list-style-type: none;
+    padding: 0;
+}
 
+.footer-container ul li {
+    margin-bottom: 15px;
+    display: flex;
+}
 
+.footer-container ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
 
+.hidden-chevron li i {
+    display: none;
+    color: $lime;
+}
+
+.footer-container ul li:hover i {
+    display: inline;
+}
+
+.footer-sub-list {
+    float: right;
+    line-height: 0.6;
+}
+
+.footer-container form {
+    display: flex;
+}
+
+.footer-container form input {
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 25px;
+    margin-right: 5px;
+}
+
+.footer-container form button {
+    background: $lime;
+    border: none;
+    i {
+        color: white;
+        text-align: center;
+        display: inline-block;
+        margin-left: 5px;
+    }
+}
+
+div.social-footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-footer i {
+    margin-right: 0;
+    font-size: 22px;
+    color: red;
+}
