@@ -150,7 +150,15 @@ footer {
     div.wrapper .gallery-card:last-of-type {
       float: right; }
   .footer-container .left-foot i p {
-    margin-left: 5px; } }
+    margin-left: 5px; }
+  .footer-container form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .footer-container form button {
+      margin-top: 5px;
+      border-radius: 5px; } }
 
 @media (max-width: 768px) {
   .photo-gallery .photo-gallery-container div {
@@ -169,7 +177,9 @@ footer {
         margin-top: 10px;
         margin-bottom: 20px; }
   body .pricing-container-desktop {
-    display: none; } }
+    display: none; }
+  body .pricing-container-small {
+    display: block; } }
 
 body {
   width: 100%;
@@ -638,6 +648,20 @@ body {
 
 .pricing-container-small {
   display: none; }
+
+.pricing-container-small .price-box {
+  width: 70%;
+  background-color: #86bc42; }
+  .pricing-container-small .price-box h3, .pricing-container-small .price-box h4 {
+    color: white; }
+  .pricing-container-small .price-box .price-circle {
+    background-color: #86bc42;
+    color: white;
+    top: 10px;
+    left: 10px; }
+
+.pricing-container-small .price-box > p {
+  color: white; }
 
 .price-box {
   padding: 40px 5px 0px;

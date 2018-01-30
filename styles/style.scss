@@ -507,6 +507,24 @@ body {
     display: none;
 }
 
+.pricing-container-small .price-box {
+    width: 70%;
+    background-color: $lime;
+    h3, h4 {
+        color:white;
+    }
+    .price-circle {
+        background-color: $lime;
+        color: white;
+        top:10px;
+        left:10px;
+    }
+}
+
+.pricing-container-small .price-box > p {
+    color: white;
+}
+
 .price-box {
     padding: 40px 5px 0px;
     background-color: $secondGrey;
@@ -775,13 +793,5 @@ div.social-footer {
     float: right;
     span {
         margin: 0 5px;
-    }
-}
-
-// MEDIA QUERY AREAAAAAAAAAAAAAAA
-
-@media (max-width: 980px) {
-    div {
-        
     }
 }

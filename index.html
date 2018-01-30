@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
     <script src='https://use.fontawesome.com/dfa9302d16.js'></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <title>Genius</title>
 </head>
 <body>
@@ -495,6 +496,18 @@
     </section>
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $('.pricing-container-small').flickity({
+            wraparound: false,
+            prevNextButtons: true
+        });
 
+        $('a').smoothScroll();
+    });
+</script>
 </body>
 </html>

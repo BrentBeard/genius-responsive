@@ -17,6 +17,13 @@
         margin-left: 5px;
         
     }
+    .footer-container form {
+        flex-direction: column;
+        button {
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    }
 }  
 
 @media (max-width: 768px) {
@@ -41,6 +48,9 @@
     body .pricing-container-desktop {
         display: none;
     }
-    
+    body .pricing-container-small {
+        display: block;
+    }
+
 
 }
