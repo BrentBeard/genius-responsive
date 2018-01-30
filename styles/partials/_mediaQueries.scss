@@ -1,4 +1,14 @@
 @media (max-width: 980px) {
+    .news-container div.news-slide {
+        flex-direction: column;
+        div {
+            width: 100%;
+            .news-button {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
     nav.top-nav {
         width: 80%;
     }
@@ -35,6 +45,15 @@
             }
         
     }
+    .different .wrapper ul {
+        flex-direction: column;
+        li {
+            margin-bottom: 60px;
+        }
+    }
+    .top-bar-left span {
+        display: none;
+    }
     .news-container div.news-slide {
         flex-direction: column;
         div {
@@ -50,7 +69,75 @@
     }
     body .pricing-container-small {
         display: block;
+        .price-box > p {
+        visibility: hidden;
+    }
     }
 
+    div.footer-container h5 {
+        font-size: 16px;
+    }
 
+   ul li .footer-sub-list {
+        line-height: 1;
+    }
+    ul li .fa-envelope + a {
+        visibility: hidden;
+    }
+    div.left-foot .footer-logo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    body .photo-gallery-container {
+        display: none;
+    }
+    body .photo-gallery-container-small {
+        display: block;
+    }
+    nav.top-nav {
+        width: 98%;
+    }
+    .top-bar-right div:first-of-type a {
+        visibility: hidden;
+    }
+    div.social-footer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.social-footer i {
+        font-size: 30px;
+        margin-right: 10px;
+    }
+    .different .titlebox h2, .pricing .titlebox h2 {
+        font-size: 30px;
+    }
+    .splash {
+        display: none;
+    }
+    button.hidden-button {
+        display: block;
+    }
+}
+
+@media (max-width: 530px) {
+    .price-box h3, .price-box > p {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 485px) {
+    div.wrapper .gallery-card {
+        width: 100%;
+        margin-right: 0;
+    }
+    .courses .titlebox h2 {
+        font-size: 30px;
+    }
+    .top-bar-right {
+        position: relative;
+        top: 0;
+        right: -30;
+    }
 }

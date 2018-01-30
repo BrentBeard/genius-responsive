@@ -145,7 +145,7 @@ body {
 .splash-inner button {
     background: $lime;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     transition: all 0.5s ease-in;
         a {
             text-decoration: none;
@@ -158,6 +158,29 @@ body {
 }
 
 .splash-inner button:hover {
+    background: #242c42;
+    a {
+        color:$lime;
+    }
+}
+
+.hidden-button {
+    display: none;
+    margin: 50px auto 0;
+    background: $lime;
+    border: none;
+    padding: 10px 30px;
+    transition: all 0.5s ease-in;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color:white;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.5s ease-in;
+        }
+}
+.hidden-button:hover {
     background: #242c42;
     a {
         color:$lime;
@@ -347,8 +370,15 @@ body {
         }
 }
 
-.photo-gallery-container img {
+.photo-gallery-container img{
     width: 100%;
+}
+
+.photo-gallery-container-small {
+    display: none;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 // NEWS STYLING BEGGINNNNNNSSSSSSSSSSSS
@@ -417,7 +447,7 @@ body {
 .news-button {
     background: $lime;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 30px;
     transition: all 0.5s ease-in;
     margin-top: 75px;
         a {

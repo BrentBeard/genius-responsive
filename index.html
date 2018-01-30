@@ -17,8 +17,8 @@
         <div class="wrapper">
             <div class="top-bar-inner">
                 <div class="top-bar-left">
-                    <i class="fa fa-phone" aria-hidden="true"><span>(555) 555-5555</span></i>
-                    <i class="fa fa-envelope-o" aria-hidden="true"><span>contact@com.vn</span></i>
+                    <a href="#"><i class="fa fa-phone" aria-hidden="true"><span>(555) 555-5555</span></i></a>
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"><span>contact@com.vn</span></i></a>
                 </div>
                 <img src="assets/Logo.png" alt="Genius logo">
                 <div class="top-bar-right">
@@ -36,14 +36,17 @@
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Pages</a></li>
-            <li><a href="#">Courses</a></li>
+            <li><a href="#courses">Courses</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">Shop</a></li>
-            <li><a href="#">News</a></li>
+            <li><a href="#news">News</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
         </ul>
     </nav>
+            <button class="hidden-button">
+                <a href="#">Start learning now!</a>
+            </button>
     <div class="splash">
         <div class="wrapper">
            <div class="splash-inner">
@@ -53,7 +56,7 @@
            </div>
         </div>
     </div>
-    <section class="courses">
+    <section class="courses" id="courses">
         <div class="wrapper">
             <div class="titlebox">
                 <p>Touch them if you want</p>
@@ -200,9 +203,17 @@
                 <div><img src="assets/gabriel-beaudry-253365.jpg" alt="iMac on desk"></div>
                 <div><img src="assets/tim-gouw-69753.jpg" alt="Colourful files"></div>
             </div>
+            <div class="photo-gallery-container-small">
+                <img src="assets/bench-accounting-49027.jpg" alt="Coffee mug and pencil">
+                <img src="assets/kai-oberhauser-309715.jpg" alt="Pencil holder on desk">
+                <img src="assets/kari-shea-199320.jpg" alt="Notebook, phone and pens">
+                <img src="assets/michal-grosicki-366026.jpg" alt="colourful sticky notes">
+                <img src="assets/gabriel-beaudry-253365.jpg" alt="iMac on desk">
+                <img src="assets/tim-gouw-69753.jpg" alt="Colourful files">
+            </div>
         </div>
     </section>
-    <section class="news">
+    <section class="news" id="news">
         <div class="titlebox">
             <p>Here's news come read the new news</p>
             <h2>Latest News</h2>
@@ -307,7 +318,7 @@
     <section class="pricing">
         <div class="titlebox">
             <p>Chooses your pricing</p>
-            <h2>The best pricing we offered</h2>
+            <h2>The best pricing we offer</h2>
             <div class="book-logo-box">
                 <div class="line left-line"></div>
                 <img src="assets/open-magazine.svg" alt="Open magazine icon">
@@ -434,7 +445,7 @@
             <div class="footer-container">
                 <div class="left-foot">
                     <img class="footer-logo" src="assets/Logo.png" alt="">
-                    <p><a href="#">Genius</a>provides a broad range of learning programs and activities that's unique in itself</p>
+                    <p><a href="#">Genius</a> provides a broad range of learning programs and activities that's unique in itself</p>
                     <i class="fa fa-check" aria-hidden="true"><p>Mountain Trekking Programs</p></i>
                     <i class="fa fa-check" aria-hidden="true"><p>Inter School Competitions</p></i>
                     <i class="fa fa-check" aria-hidden="true"><p>Awards and Ceremony</p></i>
@@ -468,7 +479,7 @@
                     <h5>Newsletters</h5>
                     <p>Sign up for new Envato content, updates, surveys & offers</p>
                     <form action="email">
-                        <input type="email" name="" placeholder="Enter your email" id="">
+                        <input type="email" name="" placeholder="Email" id="">
                         <button><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
                     </form>
                     <p>We respect your privacy</p>
@@ -502,6 +513,16 @@
 <script>
     $(document).on('ready', function () {
         $('.pricing-container-small').flickity({
+            wraparound: false,
+            prevNextButtons: true
+        });
+
+        $('a').smoothScroll();
+    });
+</script>
+<script>
+    $(document).on('ready', function () {
+        $('.photo-gallery-container-small').flickity({
             wraparound: false,
             prevNextButtons: true
         });
