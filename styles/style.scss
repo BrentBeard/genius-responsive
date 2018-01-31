@@ -8,11 +8,13 @@
 body {
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
     font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -527,6 +529,9 @@ body {
     left: -16%;
     z-index: -1;
 }
+.different li h4:hover .white-circle {
+    box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49);
+}
 
 // PRICING STYLEZZZZZZZZZZZZZZZZ
 
@@ -549,6 +554,7 @@ body {
     background-color: $lime;
     h3, h4 {
         color:white;
+    
     }
     .price-circle {
         background-color: $lime;

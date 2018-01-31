@@ -265,7 +265,7 @@ footer {
     font-size: 30px;
     margin-right: 10px; }
   .different .titlebox h2, .pricing .titlebox h2 {
-    font-size: 30px; }
+    font-size: 20px; }
   .splash {
     display: none; }
   button.hidden-button {
@@ -279,22 +279,36 @@ footer {
   div.wrapper .gallery-card {
     width: 100%;
     margin-right: 0; }
-  .courses .titlebox h2 {
-    font-size: 30px; }
+  section div.titlebox h2 {
+    font-size: 20px; }
+  section div.titlebox p {
+    font-size: 12px; }
   .top-bar-right {
     position: relative;
     top: 0;
     right: -30; }
   nav.top-nav ul {
-    padding-left: 5px; } }
+    padding-left: 5px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  nav.top-nav ul li.no-small {
+    display: none; }
+  nav.top-nav ul li a {
+    font-size: 12px; }
+  section.foot-nav ul li a {
+    font-size: 10px; }
+  section.foot-nav p {
+    font-size: 10px; } }
 
 body {
   width: 100%;
   max-width: 1920px;
+  margin: 0 auto;
   font-family: 'Raleway', sans-serif; }
 
 .wrapper {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto; }
 
 .top-bar {
@@ -777,6 +791,10 @@ body {
   top: -10px;
   left: -16%;
   z-index: -1; }
+
+.different li h4:hover .white-circle {
+  -webkit-box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49);
+  box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49); }
 
 .pricing {
   width: 100%; }

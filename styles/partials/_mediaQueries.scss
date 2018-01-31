@@ -148,7 +148,7 @@
         margin-right: 10px;
     }
     .different .titlebox h2, .pricing .titlebox h2 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .splash {
         display: none;
@@ -169,8 +169,11 @@
         width: 100%;
         margin-right: 0;
     }
-    .courses .titlebox h2 {
-        font-size: 30px;
+   section  div.titlebox h2 {
+        font-size: 20px;  
+    }
+    section div.titlebox p {
+        font-size: 12px;
     }
     .top-bar-right {
         position: relative;
@@ -179,5 +182,19 @@
     }
     nav.top-nav ul {
         padding-left: 5px;
+        flex-wrap: wrap;
+    }
+    nav.top-nav ul li.no-small {
+        display: none;
+    }
+    nav.top-nav ul li a {
+        font-size: 12px;
+    }
+    section.foot-nav ul li a {
+        font-size: 10px;
+    }
+    section.foot-nav p {
+        font-size: 10px;
     }
 }
+
