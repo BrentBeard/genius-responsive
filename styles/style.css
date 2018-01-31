@@ -146,6 +146,11 @@ footer {
     flex-direction: column; }
     .news-container div.news-slide div {
       width: 100%; }
+      .news-container div.news-slide div img {
+        -webkit-box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49);
+        box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49); }
+      .news-container div.news-slide div h3 {
+        margin-top: 0; }
       .news-container div.news-slide div .news-button {
         margin-top: 10px;
         margin-bottom: 20px; }
@@ -180,9 +185,15 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    border-right: 7.5px solid #86bc42; }
     .different .wrapper ul li {
       margin-bottom: 60px; }
+      .different .wrapper ul li h4:hover li {
+        -webkit-box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49);
+        box-shadow: 10px 10px 5px rgba(134, 188, 66, 0.49); }
+      .different .wrapper ul li:last-of-type {
+        margin-bottom: 20px; }
   .top-bar-left span {
     display: none; }
   .news-container div.news-slide {
@@ -205,10 +216,27 @@ footer {
     font-size: 16px; }
   ul li .footer-sub-list {
     line-height: 1; }
-  ul li .fa-envelope + a {
-    visibility: hidden; }
   div.left-foot .footer-logo {
-    width: 100%; } }
+    width: 100%; }
+  footer div.footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    footer div.footer-container div.middle-feet {
+      width: 50%;
+      margin: 20px 0 0; }
+    footer div.footer-container .footer-logo {
+      width: 150px; }
+    footer div.footer-container > div {
+      width: 100%; }
+    footer div.footer-container form {
+      width: 200px; }
+      footer div.footer-container form button {
+        width: 40px; } }
 
 @media (max-width: 600px) {
   body .photo-gallery-container {
@@ -219,12 +247,20 @@ footer {
     width: 98%; }
   .top-bar-right div:first-of-type a {
     visibility: hidden; }
-  div.social-footer {
+  footer div.courses-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
+    width: 100%; }
+  div.social-footer {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   div.social-footer i {
     font-size: 30px;
     margin-right: 10px; }
@@ -248,7 +284,9 @@ footer {
   .top-bar-right {
     position: relative;
     top: 0;
-    right: -30; } }
+    right: -30; }
+  nav.top-nav ul {
+    padding-left: 5px; } }
 
 body {
   width: 100%;
@@ -410,7 +448,7 @@ body {
 
 .hidden-button {
   display: none;
-  margin: 50px auto 0;
+  margin: 60px auto 0;
   background: #86bc42;
   border: none;
   padding: 10px 30px;
@@ -679,6 +717,11 @@ body {
     -o-transition: all 0.5s ease-in;
     transition: all 0.5s ease-in; }
 
+.news-button:hover {
+  background: #242c42; }
+  .news-button:hover a {
+    color: #86bc42; }
+
 .different {
   width: 100%;
   background-color: #f4f6fa;
@@ -878,6 +921,18 @@ footer {
 .left-foot p {
   margin-top: 5px; }
 
+footer div.courses-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%; }
+
 .footer-container h5 {
   font-size: 20px;
   font-weight: 300;
@@ -906,7 +961,10 @@ footer {
     flex-direction: column; }
 
 .footer-container > div {
-  width: 22%; }
+  width: 25%; }
+
+.middle-feet:first-of-type {
+  padding-left: 30px; }
 
 .footer-container p {
   display: inline-block;
@@ -1000,7 +1058,7 @@ div.social-footer {
 .foot-nav {
   width: 100%;
   background-color: #111111;
-  padding: 30px 0 50px; }
+  padding: 10px 0 30px; }
 
 .foot-nav ul {
   margin: 0;
@@ -1029,6 +1087,7 @@ div.social-footer {
 .foot-nav p {
   color: white;
   margin: 0;
+  margin-top: 5px;
   font-size: 12px;
   float: right; }
   .foot-nav p span {
