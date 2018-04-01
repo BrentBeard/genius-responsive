@@ -195,6 +195,15 @@
     }
     section.foot-nav p {
         font-size: 10px;
+        float: left;
+        display: none;
     }
-}
 
+    body .pricing-container-small .price-box .price-circle {
+        width: 75px;
+        height: 75px;
+        border: 5px solid white;
+        }
+    
+
+    }
